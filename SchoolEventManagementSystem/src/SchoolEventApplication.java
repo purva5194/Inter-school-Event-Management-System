@@ -21,6 +21,7 @@ public class SchoolEventApplication {
         Payment payment = new Payment();
         boolean eventFlag = false;
 
+        System.out.print("\n***** School Registration *****");
 
         for(int i=0; i<schools.length;  i++ )
         {
@@ -32,22 +33,22 @@ public class SchoolEventApplication {
             System.out.print("Assign Admin for "+ schoolName[i] + "\n");
             schools[0].assignAdmin();
 
-            System.out.print("\nAdd Students\n");
+            System.out.print("\nAdd Students and Parents : \n");
             schools[0].addStudent();
             schools[0].addStudent();
             schools[0].addStudent();
 
-            System.out.print("\n***** Display Admin Info *****\n");
+            System.out.print("\n***** Display Admin Info "+schoolName[i]+" *****\n");
             schools[0].adminInfo();
-            System.out.print("\n***** Display Student Info *****\n");
+            System.out.print("\n***** Display Student Info "+schoolName[i]+" *****\n");
             schools[0].studentInfo();
-            System.out.print("\n***** Display Parent Info *****\n");
+            System.out.print("\n***** Display Parent Info "+schoolName[i]+" *****\n");
             schools[0].parentInfo();
 
         }
 
         //display school list
-        System.out.print("\n***** Display School List *****\n");
+        System.out.print("\n***** Display Registered School List *****\n");
         for (String school : schoolName) {
             System.out.println(school);
         }
@@ -77,7 +78,7 @@ public class SchoolEventApplication {
             event = new Event(eventName, eventLocation, eventDate, eventTime, eventDesc);
 
             //event
-            System.out.print(("\n "+eventSchool+" organize technical event\n"));
+            System.out.print(("\n "+eventSchool+" organizes technical event\n"));
 
             System.out.print("\n***** Display Event Info *****\n");
             event.getEventInfo();
@@ -99,7 +100,7 @@ public class SchoolEventApplication {
             System.out.print("\nEnter number of student volunteers for event : ");
             int num = scan.nextInt();
 
-            System.out.print("\n****** Payment *****");
+            System.out.print("\n***** Payment *****");
             System.out.print("\ncost for student to attend the event : $10 ");
             System.out.print("\nEvent is free for volunteer students ");
 
@@ -126,7 +127,7 @@ public class SchoolEventApplication {
             }
 
         }else {
-            System.out.print("\nPlease First Register your school ");
+            System.out.print("\nPlease First Register your school..!! ");
         }
 
     }
