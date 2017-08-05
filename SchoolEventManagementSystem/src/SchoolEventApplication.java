@@ -18,6 +18,7 @@ public class SchoolEventApplication {
         String[] schoolName = new String[schools.length];
         Scanner scan = new Scanner(System.in);
         Event event;
+        Payment payment = new Payment();
         boolean eventFlag = false;
 
 
@@ -67,7 +68,7 @@ public class SchoolEventApplication {
         System.out.print("\nPlease Enter Event Description : ");
         String eventDesc = scan.nextLine();
 
-        System.out.print("\nPlease Enter School Name : ");
+        System.out.print("\nPlease Enter Organizing School Name : ");
         String eventSchool = scan.nextLine();
 
         System.out.print("\n");
@@ -95,6 +96,20 @@ public class SchoolEventApplication {
 
             }
 
+            System.out.print("\nEnter number of student volunteers for event : ");
+            int num = scan.nextInt();
+
+            System.out.print("\n****** Payment *****");
+            System.out.print("\ncost for student to attend the event : $10 ");
+            System.out.print("\nEvent is free for volunteer students ");
+
+            System.out.print("\ncost for parent to attend the event : $15 ");
+
+            //payment for students and parents
+            payment.studentPayment(num);
+            payment.parentPayment(num);
+
+
             if(eventFlag)
             {
                 //send invitation to the students
@@ -102,7 +117,8 @@ public class SchoolEventApplication {
                 student.sendNotificationToStudents();
 
                 //event states
-                System.out.print("\n\nEvent Starts\n");
+                System.out.print("\n****** Event State *****");
+                System.out.print("\nEvent Starts\n");
                 event.eventProgress();
             }
             else {
