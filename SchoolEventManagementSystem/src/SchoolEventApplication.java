@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by purvapatel on 7/30/17.
+ * Created by spartans on 7/30/17.
  */
 public class SchoolEventApplication {
 
@@ -32,6 +32,11 @@ public class SchoolEventApplication {
 
             System.out.print("Assign Admin for "+ schoolName[i] + "\n");
             schools[0].assignAdmin();
+        }
+
+        for(int i=0; i<schools.length;  i++ )
+        {
+            System.out.print("\n***** Student and Parent Registration for "+schoolName[i]+ " *****");
 
             System.out.print("\nAdd Students and Parents : \n");
             schools[0].addStudent();

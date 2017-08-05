@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 /**
- * Created by purvapatel on 7/30/17.
+ * Created by spartans on 7/30/17.
  */
 public class Student implements User {
 

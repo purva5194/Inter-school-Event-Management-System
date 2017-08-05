@@ -1,5 +1,5 @@
 /**
- * Created by purvapatel on 8/4/17.
+ * Created by spartans on 8/4/17.
  */
 public class Payment {
 

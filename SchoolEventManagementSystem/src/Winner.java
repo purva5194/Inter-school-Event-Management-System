@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Created by purvapatel on 7/30/17.
+ * Created by spartans on 7/30/17.
  * Singleton Class
  */
 public class Winner {

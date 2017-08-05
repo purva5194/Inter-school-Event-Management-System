@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 /**
- * Created by purvapatel on 8/3/17.
+ * Created by spartans on 8/3/17.
  */
 public class SchoolModel implements StudentIterator {
 

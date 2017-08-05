@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 /**
- * Created by purvapatel on 8/3/17.
+ * Created by spartans on 8/3/17.
  */
 public interface StudentIterator {
 
